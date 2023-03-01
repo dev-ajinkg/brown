@@ -126,5 +126,7 @@ function topFunction() {
 AOS.init({
     duration: 1000,
     easing: "ease",
-    once: true, // whether animation should happen only once - while scrolling down
+    // once: true, // whether animation should happen only once - while scrolling down
 });
+
+// -----------coin specification-----------------
