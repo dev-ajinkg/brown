@@ -68,6 +68,7 @@ li {
 .development,
 .marketing,
 .work,
+.pricing,
 .contact {
 	height: 110vh;
 	position: relative;
@@ -76,6 +77,7 @@ li {
 .development,
 .work,
 .contact,
+.pricing,
 .testimonial,
 .footer {
   	background-color: var(--primary);
@@ -381,6 +383,14 @@ li {
 	border: 2px solid white;
 }
 
+/*****************/
+/*     Pricing     */
+/*****************/
+.pricing .card {
+	padding: 20px;
+	border: 2px solid white;
+}
+
 
 /************************/
 /*     Testimonials     */
@@ -610,6 +620,7 @@ li {
 	.testimonial,
 	.design,
 	.contact,
+	.pricing,
 	.marketing {
 		height: 100%;
 	}
