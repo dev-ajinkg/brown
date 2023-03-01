@@ -77,7 +77,6 @@ li {
 .development,
 .work,
 .contact,
-.pricing,
 .testimonial,
 .footer {
   	background-color: var(--primary);
@@ -85,6 +84,7 @@ li {
 
 .design,
 .marketing,
+.pricing,
 .company,
 .newsletter,
 .location {
