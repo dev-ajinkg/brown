@@ -38,7 +38,11 @@ document.querySelector(".navbar-toggler").addEventListener("click", () => {
 // HOVER ON DESKTOP
 function toggleDropdown(e) {
     const _d = e.target.closest(".dropdown");
-    let _m = document.querySelector(".dropdown-menu", _d);
+    // console.log(_d);
+    // console.log(e.target.closest(".dropdown").querySelector(".dropdown-menu"))
+    // let _m = document.querySelector(".dropdown-menu", _d);
+    let _m = e.target.closest(".dropdown").querySelector(".dropdown-menu");
+    // console.log(_m);
 
     setTimeout(
         function () {
@@ -52,8 +56,13 @@ function toggleDropdown(e) {
     );
 }
 
+let cbox = document.querySelectorAll(".dropdown");
+cbox.forEach(box => {
+  box.addEventListener("mouseover", toggleDropdown);
+  box.addEventListener("mouseleave", toggleDropdown);
+});
 // ON HOVER
-const dropdownCheck = document.querySelector(".dropdown");
+var dropdownCheck = document.querySelectorAll(".dropdown");
 
 if (dropdownCheck !== null) {
     document
@@ -62,6 +71,7 @@ if (dropdownCheck !== null) {
     document
         .querySelector(".dropdown")
         .addEventListener("mouseover", toggleDropdown);
+        // console.log(document.querySelector(".dropdown"));
 
     // ON CLICK
     document.querySelector(".dropdown").addEventListener("click", (e) => {
