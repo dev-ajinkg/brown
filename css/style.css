@@ -65,7 +65,6 @@ li {
 /* Section Background */
 .home,
 .design,
-.development,
 .marketing,
 .work,
 .pricing,
@@ -73,7 +72,10 @@ li {
 	height: 110vh;
 	position: relative;
 }
-
+.development {
+	height: 125vh;
+	position: relative;
+}
 .development,
 .work,
 .contact,

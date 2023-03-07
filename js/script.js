@@ -52,7 +52,7 @@ function toggleDropdown(e) {
 
         _d.setAttribute("aria-expanded", shouldOpen);
         },
-        e.type === "mouseleave" ? 300 : 0
+        e.type === "mouseleave" ? 100 : 0
     );
 }
 
